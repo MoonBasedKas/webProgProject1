@@ -1,0 +1,20 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.element {
+    max-width: 60%;
+    min-height: 3cm;
+}
+
+#odd {
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+#even {
+    align-self: flex-start;
+    align-items: flex-start;
+}
