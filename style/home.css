@@ -5,16 +5,13 @@
 }
 
 .element {
-    max-width: 60%;
+    max-width: 100%;
     min-height: 3cm;
+    display: flex;
+    flex-direction: row;
 }
 
-#odd {
-    align-self: flex-end;
-    align-items: flex-end;
-}
-
-#even {
-    align-self: flex-start;
-    align-items: flex-start;
+#content {
+    width: 25%;
+    height: 25%;
 }

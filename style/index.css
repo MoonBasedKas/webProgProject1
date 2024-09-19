@@ -18,3 +18,11 @@ body {
     height: 3cm;
     background-color: aqua;
 }
+
+#donptions {
+    display: none;
+}
+
+.doptions {
+    display: none;
+}
