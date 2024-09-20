@@ -2,6 +2,8 @@
     background-color: wheat;
     border: 3px;
     border-style:groove;
+    font-size: 30px;
+    text-align: center;
 }
 
 .pageContent{
