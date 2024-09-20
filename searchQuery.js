@@ -16,7 +16,7 @@ function searchvals(input) {
     console.log(pages.length)
 
     pages = getLikeness(pages, input)
-    
+
     pages = sortPages(pages)
     console.log(pages.length)
     results.innerHTML = ""
@@ -46,11 +46,11 @@ function sortPages(arr) {
     for (let i = 0; i < arr.length; i++) {
         max = i
         for (let j = i + 1; j < arr.length; j++) {
-            if (arr[i].likeness < arr[j].likeness) {
+            if (arr[max].likeness < arr[j].likeness) {
                 max = j
             }
         }
-        if (max != i){
+        if (max != i) {
             temp = arr[i]
             arr[i] = arr[max]
             arr[max] = temp
@@ -74,7 +74,7 @@ function displayPages(arr) {
         temp += "</div>"
         ans += temp
         console.log(arr[i].likeness, arr[i].name)
-    }    return ans
+    } return ans
 }
 
 // Encapsulates page information.
