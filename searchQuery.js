@@ -2,12 +2,12 @@
 function searchvals(input) {
     let pages = []
     // Because this is a proof of concept our results are kind of limited and very static
-    pages.push(new page('about', 'about.html', 'Interested in more about us?'))
-    pages.push(new page('stories', 'stories.html', 'Learn about some previous victums and their expierences.'))
-    pages.push(new page('donate', 'donate.html', 'Want to support us?'))
-    pages.push(new page('diagnosis', 'diagnosis.html', 'It is an important term we will use a lot. We believe defining this term would help you explore our website.'))
-    pages.push(new page('contact us', 'contactus.html', 'Have something important to tell us?'))
-    pages.push(new page('home', 'index.html', 'Our home page an important place to start. Albiet, you kinda had to be there to get here.'))
+    pages.push(new page('About', 'about.html', 'Interested in more about us?'))
+    pages.push(new page('Stories', 'stories.html', 'Learn about some previous victums and their expierences.'))
+    pages.push(new page('Donate', 'donate.html', 'Want to support us?'))
+    pages.push(new page('Diagnosis', 'diagnosis.html', 'It is an important term we will use a lot. We believe defining this term would help you explore our website.'))
+    pages.push(new page('Contact us', 'contactus.html', 'Have something important to tell us?'))
+    pages.push(new page('Home', 'index.html', 'Our home page an important place to start. Albiet, you kinda had to be there to get here.'))
     console.log(input.length)
     console.log(pages.length)
 
