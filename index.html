@@ -11,8 +11,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/fonts.css">
+        <link rel="stylesheet" href="style/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="roboto-mono-light">
         <div class="main">
             <div class="telem">
                 <h1>Icon </h1>
@@ -22,20 +27,47 @@
             </div>
         </div>
         <div class="dropit">
-            <div class="do option" onmouseover="showMenu('doptions')" onmouseout="hideMenu('doptions')">
-                <h2>What we do!</h2>
-                <h3 class = "doptions">Meow</h3>
-                <h3 class = "doptions">Teehee</h3>
+            <div class="do option" onmouseover="showMenu('doptions', 'doheader')" onmouseout="hideMenu('doptions')">
+                <h2 class="ws" id="doheader">What we do!</h2>
+                <h3 class="doptions ws">Meow</h3>
+                <h3 class="doptions ws">Teehee</h3>
             </div>
-            <div class="don option" onmouseover="showMenu('donptions')" onmouseout="hideMenu('donptions')">
-                <h2>What we don't do?</h2>
-                <h3 class="donptions">Magnificant</h3>
-                <h3 class="donptions">Magniant</h3>
+            <div class="don option" onmouseover="showMenu('donptions', 'dontheader')" onmouseout="hideMenu('donptions')">
+                <h2 class="ws" id="dontheader">What we don't do?</h2>
+                <h3 class="donptions ws">Magnificant</h3>
+                <h3 class="donptions ws">Magniant</h3>
             </div>
         </div>
-        <iframe title="content" src="home.html" id="page">
-            
-        </iframe>
+
+        <div class="outer">
+            <div class="inner">
+                <div class="element" id="odd">
+                    <img id="content" alt="placeholder" src="content/Placeholder.png" loading="lazy" decoding="async">
+                    <div>
+                        <h1 class="ubuntu-regular">Mission statement</h1>
+                        <p>
+                            Insert some silly text about the non profit because this is a slavery.
+                            I can not pay bills with "Learning-expeirence" I can not pay my groceries with "Learning experience"
+                        </p>
+                    </div>
+                </div>
+                <div class="element" id="even">
+                    <div>
+                        <h1 class="ubuntu-regular">Core Message</h1>
+                        <p>
+                            "We like forcing students tohello
+                            world
+                            do work for us
+                            without paying them", Sana'a 2024 Cats are silly meowm meow meow meow meowm
+                            meow moew moew meow meow moew. Teehhee heheheh hhe heh eh heh eh eheh hhe heh ehe he he he heh
+                            ehehehehe he he he
+                        </p>
+                    </div>
+                    <img id="content" alt="placeholder" src="content/Placeholder.png" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+
         <script src="magic/index.js"></script>
     </body>
 </html>

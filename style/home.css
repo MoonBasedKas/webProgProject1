@@ -5,13 +5,30 @@
 }
 
 .element {
-    width: 100%;
     min-height: 3cm;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    border-color: #554f5859;
+    border-width: 3px;
+    border-bottom-style: solid;
+}
+
+div.outer {
+    display: block;
+    padding: 0;
+    width: 100%;
+}
+
+div.inner {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #content {
     width: 25%;
     height: 25%;
+}
+.ws {
+    text-indent: 50px;
 }
