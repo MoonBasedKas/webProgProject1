@@ -1,3 +1,6 @@
+function main(){
+
+}
 // Function that manages querying, sorting, and displaying search results.
 function searchvals(input) {
     let pages = []
@@ -96,3 +99,5 @@ class page {
         this.likeness = 0 // We use a point deduction system to determine if its the user's element.
     }
 }
+
+main()
