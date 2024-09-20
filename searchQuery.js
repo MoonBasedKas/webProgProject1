@@ -50,9 +50,11 @@ function sortPages(arr) {
                 max = j
             }
         }
-        temp = arr[i]
-        arr[i] = arr[max]
-        arr[max] = temp
+        if (max != i){
+            temp = arr[i]
+            arr[i] = arr[max]
+            arr[max] = temp
+        }
 
     }
     return arr;
