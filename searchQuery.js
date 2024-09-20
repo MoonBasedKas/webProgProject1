@@ -8,6 +8,10 @@ function searchvals(input) {
     pages.push(new page('Diagnosis', 'diagnosis.html', 'It is an important term we will use a lot. We believe defining this term would help you explore our website.'))
     pages.push(new page('Contact us', 'contactus.html', 'Have something important to tell us?'))
     pages.push(new page('Home', 'index.html', 'Our home page an important place to start. Albiet, you kinda had to be there to get here.'))
+    pages.push(new page('Pill Shaming', './whatWeDoNotDo/pillShaming.html', 'It is cringe bro. we do not do it and neither should you.'))
+    pages.push(new page('Spiritual interpretations of experiences commonly described as “psychosis”', './whatWeDoNotDo/promoteSpirit.html', 'We do not make any statements on it but provide an interesting list of reads.'))
+    pages.push(new page('Give advice on how to make somebody adhere to a treatment', './whatWeDoNotDo/giveAdvice.html', 'This is not a resource we provide.'))
+    pages.push(new page('Participate in terminological controversies', './whatWeDoNotDo/partakein.html', 'We do not participate in terminological controversies. We do not wish to fight over semantics.'))
     console.log(input.length)
     console.log(pages.length)
 
@@ -67,7 +71,7 @@ function displayPages(arr) {
         temp += arr[i].desc
         temp += "</div>"
         ans += temp
-        
+        console.log(arr[i].likeness, arr[i].name)
     }    return ans
 }
 
