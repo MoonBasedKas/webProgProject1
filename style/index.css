@@ -9,13 +9,21 @@ body {
     height: 30cm;
 }
 
+#mainLogo {
+    width: 32pt;
+    height: 32pt;
+    padding-top: 30px;
+}
+
 .main {
     display: flex;
+    font-size: 16pt;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     width: 100%;
     height: 3cm;
+    gap: 30px;
     background-color: #35647a;
     color: white;
 }
