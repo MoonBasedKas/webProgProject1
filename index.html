@@ -2,9 +2,10 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html lang=en>
     <head>
+        <!--- Some extra content..................................................................................................... -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>FAMHR Home</title>
@@ -18,6 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     </head>
     <body class="roboto-mono-light">
+        <!--- Title bar..................................................................................................... -->
         <div class="main">
             <div class="telem">
                 <h1>Icon </h1>
@@ -26,19 +28,28 @@
                 <h1>FAMHR</h1>
             </div>
         </div>
+        <!--- Search bar.................................................................................................... -->
+        <div class="searchContainer">
+            <center>
+                <form action="./search.html" method="get">
+                    <input type="text" id="globalSearch" name="search" value="search">
+                </form>
+            </center>
+        </div>
+        <!--- Drop down menu................................................................................................. -->
         <div class="dropit">
             <div class="do option" onmouseover="showMenu('doptions', 'doheader')" onmouseout="hideMenu('doptions')">
                 <h2 class="ws" id="doheader">What we do!</h2>
-                <h3 class="doptions ws">Meow</h3>
-                <h3 class="doptions ws">Teehee</h3>
+                <a class="doptions ws">Meow</a>
+                <a class="doptions ws">Teehee</a>
             </div>
             <div class="don option" onmouseover="showMenu('donptions', 'dontheader')" onmouseout="hideMenu('donptions')">
                 <h2 class="ws" id="dontheader">What we don't do?</h2>
-                <h3 class="donptions ws">Magnificant</h3>
-                <h3 class="donptions ws">Magniant</h3>
+                <a class="donptions ws">Magnificant</a>
+                <a class="donptions ws">Magniant</a>
             </div>
         </div>
-
+        <!--- Content section................................................................................................ -->
         <div class="outer">
             <div class="inner">
                 <div class="element" id="odd">
@@ -67,7 +78,7 @@
                 </div>
             </div>
         </div>
-
+        <!--- Script section................................................................................................ -->
         <script src="magic/index.js"></script>
     </body>
 </html>
