@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/search.css">
     <script src="searchQuery.js"></script>
 </head>
 
@@ -21,12 +22,13 @@
             <h1>Enter your search in the box below
             </h1>
             <p><br><br><br>
-                <input type="textbox" id="sq"> <input type="button" name="Submit" id=sqs onclick="searchvals(sq.value)">
+                <input type="textbox" id="sq"><button onclick="searchvals(sq.value)">Search</button>
 
             </p>
         </div>
     </div>
-    <div id=results>
+    <div id=results class="search">
+        You haven't made a search yet...
     </div>
 </body>
 

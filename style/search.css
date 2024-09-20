@@ -1,0 +1,24 @@
+.search{
+    background-color:wheat;
+    padding: 1%;
+    font-size: 20px;
+}
+
+.search div{
+    background-color: #b2ff4c;
+    border: 2px;
+    border-style:groove;
+    margin: .5cm;
+    margin-top: .5cm;
+    padding: 5px;
+
+}
+
+body {
+    background-color: lightblue;
+    margin: .5cm;
+}
+
+a {
+    font-size: 30px;
+}

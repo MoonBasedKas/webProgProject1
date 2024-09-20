@@ -1,12 +1,13 @@
+// Function that manages querying, sorting, and displaying search results.
 function searchvals(input) {
     let pages = []
     // Because this is a proof of concept our results are kind of limited and very static
-    pages.push(new page('about', 'about.html'))
-    pages.push(new page('stories', 'stories.html'))
-    pages.push(new page('donate', 'donate.html'))
-    pages.push(new page('diagnosis', 'diagnosis.html'))
-    pages.push(new page('contact us', 'contactus.html'))
-    pages.push(new page('home', 'index.html'))
+    pages.push(new page('about', 'about.html', 'Interested in more about us?'))
+    pages.push(new page('stories', 'stories.html', 'Learn about some previous victums and their expierences.'))
+    pages.push(new page('donate', 'donate.html', 'Want to support us?'))
+    pages.push(new page('diagnosis', 'diagnosis.html', 'It is an important term we will use a lot. We believe defining this term would help you explore our website.'))
+    pages.push(new page('contact us', 'contactus.html', 'Have something important to tell us?'))
+    pages.push(new page('home', 'index.html', 'Our home page an important place to start. Albiet, you kinda had to be there to get here.'))
     console.log(input.length)
     console.log(pages.length)
 
@@ -62,20 +63,20 @@ function displayPages(arr) {
         temp += arr[i].src
         temp += "'>"
         temp += arr[i].name
-        temp += "</a> </div>"
+        temp += "</a> <br>"
+        temp += arr[i].desc
+        temp += "</div>"
         ans += temp
-        console.log(temp)
         
-    }
-    // console.log(ans)
-    return ans
+    }    return ans
 }
 
 // Encapsulates page information.
 class page {
-    constructor(name, src) {
+    constructor(name, src, desc) {
         this.name = name
         this.src = src
+        this.desc = desc
         this.likeness = 0 // We use a point deduction system to determine if its the user's element.
     }
 }
