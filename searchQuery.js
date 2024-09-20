@@ -5,12 +5,16 @@ function searchvals(input) {
     pages.push(new page('stories', 'stories.html'))
     pages.push(new page('donate', 'donate.html'))
     pages.push(new page('diagnosis', 'diagnosis.html'))
-    pages.push(new page('contactus', 'contactus.html'))
+    pages.push(new page('contact us', 'contactus.html'))
     pages.push(new page('home', 'index.html'))
     console.log(input.length)
+    console.log(pages.length)
 
     pages = getLikeness(pages, input)
+    
     pages = sortPages(pages)
+    console.log(pages.length)
+    results.innerHTML = ""
     results.innerHTML = displayPages(pages)
 }
 
@@ -20,14 +24,14 @@ function getLikeness(arr, input) {
         for (let j = 0; j < input.length; j++) {
             if (arr[i].name[j] != input[j]) {
                 // Removes points if there are different keys.
-                arr[i].likeness--;
+                arr[i].likeness -= 1;
             }
             // Removes additional points if the lengths are different.
-            arr[i].likeness -= Math.abs(input.length - arr[i].likeness.length)
+            // arr[i].likeness -= Math.abs(input.length - arr[i].likeness.length)
         }
 
     }
-    return arr
+    return arr;
 }
 
 //Selection sort because do we really need speed for 6 results?
@@ -46,22 +50,25 @@ function sortPages(arr) {
         arr[max] = temp
 
     }
+    return arr;
 
 }
 
 function displayPages(arr) {
-    let results = ''
+    let ans = ''
     let temp = ''
-    for (let i = 0; i < arr.length; j++) {
-        temp = ''
-        temp += '<div> <a href="'
+    for (let i = 0; i < arr.length; i++) {
+        temp = "<div> <a href='"
         temp += arr[i].src
-        temp += ">"
+        temp += "'>"
         temp += arr[i].name
         temp += "</a> </div>"
-        results += temp
+        ans += temp
+        console.log(temp)
+        
     }
-    return results
+    // console.log(ans)
+    return ans
 }
 
 // Encapsulates page information.
