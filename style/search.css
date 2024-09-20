@@ -1,21 +1,23 @@
 .search{
-    background-color:wheat;
+    background-color:#996cb6;
     padding: 1%;
     font-size: 20px;
+    color: #C3AFE6;
 }
 
 .search div{
-    background-color: lightyellow;
+    background-color: #C3AFE6;
     border: 2px;
     border-style:groove;
     margin: .5cm;
     margin-top: .5cm;
     padding: 5px;
+    color: #461169;
 
 }
 
 body {
-    background-color: lightblue;
+    background-color: #ABD8DB;
     margin: .5cm;
 }
 

@@ -12,7 +12,7 @@ function searchvals(input) {
     pages.push(new page('Spiritual interpretations of experiences commonly described as “psychosis”', './whatWeDoNotDo/promoteSpirit.html', 'We do not make any statements on it but provide an interesting list of reads.'))
     pages.push(new page('Give advice on how to make somebody adhere to a treatment', './whatWeDoNotDo/giveAdvice.html', 'This is not a resource we provide.'))
     pages.push(new page('Participate in terminological controversies', './whatWeDoNotDo/partakein.html', 'We do not participate in terminological controversies. We do not wish to fight over semantics.'))
-    pages.push(new page('Promote treatments that are not supported by scientific evidence', './whatWeDoNotDo/promoteTreatments.html'))
+    pages.push(new page('Promote treatments that are not supported by scientific evidence', './whatWeDoNotDo/promoteTreatments.html', 'This page is currently awaiting the writers to write this page. '))
 
     pages.push(new page('Fight stigma and discrimination', './whatWeDo/fightStigma.html', 'Page is waiting on content to be written.'))
     pages.push(new page('Foster a dialogue between family members and their loved ones diagnosed with mental illness', './whatWeDo/fosterDialouge.html', 'Page is waiting on content to be written.'))

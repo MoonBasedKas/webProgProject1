@@ -1,13 +1,15 @@
 .pageTitle{
-    background-color: wheat;
+    background-color: #523B61;
     border: 3px;
     border-style:groove;
     font-size: 30px;
     text-align: center;
+    color: #C3AFE6;
+    
 }
 
 .pageContent{
-    background-color: wheat;
+    background-color: #F3BFD0;
     border: 1px;
     border-style:groove;
     margin: 2.5%;
