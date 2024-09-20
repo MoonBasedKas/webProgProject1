@@ -13,6 +13,62 @@
 
 
 <body>
+    <div class="main">
+        <div class="telem">
+            <picture>
+                <img src="content/Placeholder.png"
+                loading="lazy"
+                alt="FAMHR Logo"
+                encoding="async"
+                id="mainLogo"
+                ></img>
+            </picture>
+        </div>
+        <div class="telem">
+            <h1>FAMHR</h1>
+        </div>
+    </div>
+    <!--- Search bar.................................................................................................... -->
+    <div class="searchContainer">
+        <center>
+            <form action="./search.html" method="get">
+                <input type="text" title="search" id="globalSearch" name="search" value="search"></input>
+            </form>
+        </center>
+    </div>
+    <!--- Drop down menu................................................................................................. -->
+    <div class="dropit">
+        <div class="do option" onmouseover="showMenu('doptions', 'doheader')" onmouseout="hideMenu('doptions')">
+            <h2 class="ws" id="doheader">What we do!</h2>
+            <a class="doptions ws" href="./whatWeDo/connectFamilies.html">Connect with other families for mutual support and education</a>
+            <a class="doptions ws" href="./whatWeDo/shareOurExpience.html">Share our experience of what worked and what did not for us and our loved ones</a>
+            <a class="doptions ws" href="./whatWeDo/fosterDialouge.html">Foster a dialogue between family members and their loved ones diagnosed with mental illness</a>
+            <a class="doptions ws" href="./whatWeDo/fightStigma.html">Fight stigma and discrimination</a>
+            <a class="doptions ws" href="./whatWeDo/shareInformation.html">Share information about evidence-based treatment methods</a>
+            <a class="doptions ws" href="./whatWeDo/shareTips.html">Share tips for choosing the mental health provider and navigating the mental health system
+                based on our personal experience</a>
+            <a class="doptions ws">Share tips about reading and understanding medical literature based on our personal experience</a>
+            <a class="doptions ws">Provide a space for uncensored conversation for everyone interested in the subject of mental
+                health</a>
+            <a class="doptions ws">Welcome members of all faith and religious backgrounds, as well as atheists</a>
+            <a class="doptions ws">Collect personal stories (the position of the authors does not necessarily have to reflect the
+                position of the FAMHR)</a>
+        </div>
+        <div class="don option" onmouseover="showMenu('donptions', 'dontheader')" onmouseout="hideMenu('donptions')">
+            <h2 class="ws" id="dontheader">What we don't do?</h2>
+            <a class="donptions ws">Take money from pharmaceutical companies and producers of medical devices</a>
+            <a class="donptions ws" href="whatWeDoNotDo/partakein.html">Participate in terminological controversies (debates over the best words to use)</a>
+            <a class="donptions ws">Give medical advice</a>
+            <a class="donptions ws" href="whatWeDoNotDo/pillShaming.html">“Pill shaming”</a>
+            <a class="donptions ws" href="whatWeDoNotDo/promoteTreatments.html">Promote treatments that are not supported by scientific evidence (such treatments may be
+                mentioned in personal stories)</a>
+            <a class="donptions ws" href="whatWeDoNotDo/promoteSpirit.html">Promote spiritual interpretations of experiences commonly described as “psychosis” (such
+                interpretations may be found in personal stories)</a>
+            <a class="donptions ws" href="whatWeDoNotDo/giveAdvice.html">Give advice on how to make somebody adhere to a treatment they do not want or how to
+                commit somebody to a hospital or Assisted Outpatient Treatment against their will</a>
+            <a class="donptions ws">Have affiliation with any religious or political group</a>
+        </div>
+    </div>
     <div class="content">
         <div class="pageTitle">
             <h1>Pill Shaming</h1>
