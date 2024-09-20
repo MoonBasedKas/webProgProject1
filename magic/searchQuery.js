@@ -1,8 +1,26 @@
 function main(){
+    let finder = location.search.substring(1);
+    finder = finder.split("=")[1];
+    finder = swapWhiteSpace(finder);
+    f = searchvals(finder);
+}
 
+
+function swapWhiteSpace(str){
+    temp = ""
+    for (x = 0; x <str.length; x++){
+        if (str[x] == '+'){
+            temp += ' '
+        } else {
+            temp += str[x]
+        }
+    }
+
+    return temp
 }
 // Function that manages querying, sorting, and displaying search results.
 function searchvals(input) {
+    let newPage = document.getElementById("results")
     let pages = []
     // Because this is a proof of concept our results are kind of limited and very static
     pages.push(new page('About', 'about.html', 'Interested in more about us?'))
@@ -25,14 +43,11 @@ function searchvals(input) {
 
     pages.push(new page('Connect with other families for mutual support and education', './whatWeDo/shareTips.html', 'Page is waiting on content to be written.'))
     pages.push(new page('Provide a space for uncensored conversation for everyone interested in the subject of mental health', './whatWeDo/shareTips.html', 'Page is waiting on content to be written.'))
-    console.log(input.length)
-    console.log(pages.length)
 
     pages = getLikeness(pages, input)
-
+    console.log(newPage)
     pages = sortPages(pages)
-    console.log(pages.length)
-    results.innerHTML = ""
+    results.innerHTML = ''
     results.innerHTML = displayPages(pages)
 }
 
@@ -52,7 +67,7 @@ function getLikeness(arr, input) {
     return arr;
 }
 
-//Selection sort because do we really need speed for 6 results?
+//Selection sort because do we really need speed for so few results?
 function sortPages(arr) {
     let temp = null
     let max = 0
