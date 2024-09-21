@@ -5,7 +5,7 @@ body {
 
 .ptitle{
     text-decoration: none;
-    color:#C3AFE6 ;
+    color:#523B61 ;
 }
 
 #page {
@@ -29,8 +29,8 @@ body {
     width: 100%;
     height: 3cm;
     gap: 30px;
-    background-color: #35647a;
-    color: white;
+    background-color: #F3BFD0;
+    
 }
 
 .don {
@@ -48,7 +48,7 @@ body {
 
 .option {
     position: absolute;
-    background-color: #5ae29e;
+    background-color: #ABD8D8;
     z-index: 1;
     box-shadow: 10px 10px 10px rgba(47, 17, 54, 0.116);
     width: 50%;
@@ -73,13 +73,13 @@ body {
 }
 
 .searchContainer {
-    background-color: cadetblue;
+    background-color: #ABD8D8;
     width: 100%;
     height: 1cm
 }
 
 #globalSearch:hover {
-    border-color: chocolate;
+    border-color: #523B61;
 }
 
 #globalSearch {
