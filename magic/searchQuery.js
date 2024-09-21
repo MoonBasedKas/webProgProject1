@@ -45,7 +45,6 @@ function searchvals(input) {
     pages.push(new page('Provide a space for uncensored conversation for everyone interested in the subject of mental health', './whatWeDo/shareTips.html', 'Page is waiting on content to be written.'))
 
     pages = getLikeness(pages, input)
-    console.log(newPage)
     pages = sortPages(pages)
     results.innerHTML = ''
     results.innerHTML = displayPages(pages)
@@ -101,7 +100,6 @@ function displayPages(arr) {
         temp += arr[i].desc
         temp += "</div>"
         ans += temp
-        console.log(arr[i].likeness, arr[i].name)
     } return ans
 }
 
