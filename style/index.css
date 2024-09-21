@@ -3,6 +3,11 @@ body {
     margin: 0px;
 }
 
+.ptitle{
+    text-decoration: none;
+    color:#C3AFE6 ;
+}
+
 #page {
     border-style: none;
     width: 100%;
