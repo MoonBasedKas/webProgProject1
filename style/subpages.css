@@ -8,15 +8,23 @@
     
 }
 
-.pageContent{
+
+.pageSubmit{
     background-color: #F3BFD0;
     border: 1px;
     border-style:groove;
     margin: 2.5%;
     padding: 5px;
 }
+.pageContent{
+    /* background-color: #F3BFD0; */
+    /* border: 1px; */
+    /* border-style:groove; */
+    /* margin: 2.5%; */
+    padding: 5px;
+}
 
 body {
-    background-color: lightblue;
-    margin: 2.5%;
+    background-color: white;
+    /* margin: 2.5%; */
 }
