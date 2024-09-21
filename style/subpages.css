@@ -17,14 +17,12 @@
     padding: 5px;
 }
 .pageContent{
-    /* background-color: #F3BFD0; */
-    /* border: 1px; */
-    /* border-style:groove; */
-    /* margin: 2.5%; */
     padding: 5px;
 }
 
+
+
 body {
     background-color: white;
-    /* margin: 2.5%; */
+    margin: 0;
 }
