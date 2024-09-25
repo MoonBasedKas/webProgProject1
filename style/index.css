@@ -5,7 +5,8 @@ body {
 
 
 .pageFooter{
-    border-top: 3px;
+    min-height: 20vh;
+    border-top: 7px;
     border-left: 0px;
     border-right: 0px;
     border-bottom: 0px;

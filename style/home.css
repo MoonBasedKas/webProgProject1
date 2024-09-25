@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     max-height: none;
-    min-height: 100vh; 
+    min-height: 80vh; 
 }
 
 .element {
